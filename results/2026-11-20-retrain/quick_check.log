@@ -1,0 +1,8 @@
+Training in 1 worlds with 2 copies of Webots; logs in /home/g19-admin/G19/webots/logs
+Round 1: corridor, corridor
+Cannot connect to Webots instance, retrying for another 50 seconds...
+Cannot connect to Webots instance, retrying for another 50 seconds...
+Fine-tuning /home/g19-admin/G19/models/assist_ppo.zip
+    1000 steps  return  19.31  success  100%  hit person    0%  hit wall    0%  (160 steps/s)
+    2000 steps  return  19.12  success  100%  hit person    0%  hit wall    0%  (158 steps/s)
+Saved models/check.zip

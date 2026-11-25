@@ -1,0 +1,231 @@
+{"said": "hang on", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "hold it", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "stop right there", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "whoa whoa whoa", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "wait a sec", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "I'll take over", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "let me take the wheel", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "I want to drive myself", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "not that way", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "you're going the wrong way", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "careful", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "pause", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "freeze", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "that's close enough", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "stop here please", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "can you stop", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "hold up", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "brake", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "stay where you are", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "don't move", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "I've got it from here", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "let me steer", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "manual please", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "no no no", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "that's not where I want to go", "screen": "directory", "want": ["stop"], "kind": "stop"}
+{"said": "you can drive now", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "okay take over", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "your turn", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "back to you", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "autopilot please", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "you take it from here", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "I'm done driving", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "can you drive again", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "auto mode", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "let the chair drive", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "carry on driving yourself", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "I'm tired, you drive", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "drive for me", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "you drive the rest", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "I'm finished steering", "screen": "driving", "want": ["hand_back"], "kind": "hand back"}
+{"said": "off we go", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "let's go", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "go there", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "head there now", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "start moving", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "okay go", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "lead the way", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "take me there", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "proceed", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "let's get going", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "go on then", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "yes that one, go", "screen": "picked", "want": ["go"], "kind": "go"}
+{"said": "the pharmacy please", "screen": "directory", "want": ["place:Pharmacy"], "kind": "place by name"}
+{"said": "can we go to emergency", "screen": "directory", "want": ["place:Emergency"], "kind": "place by name"}
+{"said": "I want to go to the cafe", "screen": "directory", "want": ["place:Cafe"], "kind": "place by name"}
+{"said": "main reception", "screen": "directory", "want": ["place:Main Reception"], "kind": "place by name"}
+{"said": "take me to ward 4 a", "screen": "directory", "want": ["place:Ward 4A"], "kind": "place by name"}
+{"said": "ward four b please", "screen": "directory", "want": ["place:Ward 4B"], "kind": "place by name"}
+{"said": "the lifts", "screen": "directory", "want": ["place:Lifts"], "kind": "place by name"}
+{"said": "medical imaging", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by name"}
+{"said": "the imaging department", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by name"}
+{"said": "radiology", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by name"}
+{"said": "the x ray department", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by name"}
+{"said": "pathology", "screen": "directory", "want": ["place:Pathology Collection"], "kind": "place by name"}
+{"said": "outpatients", "screen": "directory", "want": ["place:Outpatient Clinics"], "kind": "place by name"}
+{"said": "allied health please", "screen": "directory", "want": ["place:Allied Health"], "kind": "place by name"}
+{"said": "the waiting room", "screen": "directory", "want": ["place:Waiting Area"], "kind": "place by name"}
+{"said": "the toilets", "screen": "directory", "want": ["place:Toilets"], "kind": "place by name"}
+{"said": "where's the bathroom", "screen": "directory", "want": ["place:Toilets"], "kind": "place by name"}
+{"said": "the restroom please", "screen": "directory", "want": ["place:Toilets"], "kind": "place by name"}
+{"said": "A and E", "screen": "directory", "want": ["place:Emergency"], "kind": "place by name"}
+{"said": "casualty", "screen": "directory", "want": ["place:Emergency"], "kind": "place by name"}
+{"said": "the front desk", "screen": "directory", "want": ["place:Main Reception"], "kind": "place by name"}
+{"said": "reception please", "screen": "directory", "want": ["place:Main Reception"], "kind": "place by name"}
+{"said": "the cafeteria", "screen": "directory", "want": ["place:Cafe"], "kind": "place by name"}
+{"said": "the coffee shop", "screen": "directory", "want": ["place:Cafe"], "kind": "place by name"}
+{"said": "the chemist", "screen": "directory", "want": ["place:Pharmacy"], "kind": "place by name"}
+{"said": "the elevator", "screen": "directory", "want": ["place:Lifts"], "kind": "place by name"}
+{"said": "the outpatient clinic", "screen": "directory", "want": ["place:Outpatient Clinics"], "kind": "place by name"}
+{"said": "the emergency department", "screen": "directory", "want": ["place:Emergency"], "kind": "place by name"}
+{"said": "the CT scanner", "screen": "imaging", "want": ["place:CT Scan"], "kind": "place by name"}
+{"said": "MRI please", "screen": "imaging", "want": ["place:MRI"], "kind": "place by name"}
+{"said": "x ray", "screen": "imaging", "want": ["place:X-Ray"], "kind": "place by name"}
+{"said": "the ultrasound room", "screen": "imaging", "want": ["place:Ultrasound"], "kind": "place by name"}
+{"said": "nuclear medicine", "screen": "imaging", "want": ["place:Nuclear Medicine"], "kind": "place by name"}
+{"said": "imaging reception", "screen": "imaging", "want": ["place:Imaging Reception"], "kind": "place by name"}
+{"said": "room three", "screen": "ward4a", "want": ["place:4A Room 3"], "kind": "place by name"}
+{"said": "4 a room 5", "screen": "ward4a", "want": ["place:4A Room 5"], "kind": "place by name"}
+{"said": "the nurses station", "screen": "ward4a", "want": ["place:Nurses' Station 4A"], "kind": "place by name"}
+{"said": "the nurse's desk", "screen": "ward4a", "want": ["place:Nurses' Station 4A"], "kind": "place by name"}
+{"said": "the treatment room", "screen": "ward4a", "want": ["place:Treatment Room"], "kind": "place by name"}
+{"said": "room one please", "screen": "ward4a", "want": ["place:4A Room 1"], "kind": "place by name"}
+{"said": "I need to pick up my prescription", "screen": "directory", "want": ["place:Pharmacy"], "kind": "place by purpose"}
+{"said": "I'm here for a blood test", "screen": "directory", "want": ["place:Pathology Collection"], "kind": "place by purpose"}
+{"said": "I have a scan booked", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by purpose"}
+{"said": "I need to see my physiotherapist", "screen": "directory", "want": ["place:Allied Health"], "kind": "place by purpose"}
+{"said": "I'm visiting my mum in ward 4 b", "screen": "directory", "want": ["place:Ward 4B"], "kind": "place by purpose"}
+{"said": "I'm thirsty", "screen": "directory", "want": ["place:Cafe"], "kind": "place by purpose"}
+{"said": "I need to use the toilet", "screen": "directory", "want": ["place:Toilets"], "kind": "place by purpose"}
+{"said": "I'm here to check in", "screen": "directory", "want": ["place:Main Reception"], "kind": "place by purpose"}
+{"said": "I've hurt my arm really badly", "screen": "directory", "want": ["place:Emergency"], "kind": "place by purpose"}
+{"said": "I need to go up to another floor", "screen": "directory", "want": ["place:Lifts"], "kind": "place by purpose"}
+{"said": "I have an outpatient appointment", "screen": "directory", "want": ["place:Outpatient Clinics"], "kind": "place by purpose"}
+{"said": "I need an x-ray of my knee", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "place by purpose"}
+{"said": "they want a urine sample", "screen": "directory", "want": ["place:Pathology Collection"], "kind": "place by purpose"}
+{"said": "I need to collect my medicine", "screen": "directory", "want": ["place:Pharmacy"], "kind": "place by purpose"}
+{"said": "where do I wait for my appointment", "screen": "directory", "want": ["place:Waiting Area"], "kind": "place by purpose"}
+{"said": "I could really do with a coffee", "screen": "directory", "want": ["place:Cafe"], "kind": "place by purpose"}
+{"said": "I'd like something to eat", "screen": "directory", "want": ["place:Cafe"], "kind": "place by purpose"}
+{"said": "my occupational therapy session", "screen": "directory", "want": ["place:Allied Health"], "kind": "place by purpose"}
+{"said": "I need to wash my hands", "screen": "directory", "want": ["place:Toilets"], "kind": "place by purpose"}
+{"said": "I can't breathe properly, it's urgent", "screen": "directory", "want": ["place:Emergency"], "kind": "place by purpose"}
+{"said": "my GP sent me for blood work", "screen": "directory", "want": ["place:Pathology Collection"], "kind": "place by purpose"}
+{"said": "I've got a clinic appointment at ten", "screen": "directory", "want": ["place:Outpatient Clinics"], "kind": "place by purpose"}
+{"said": "I want to ask someone for directions", "screen": "directory", "want": ["place:Main Reception"], "kind": "place by purpose"}
+{"said": "I need to fill my script", "screen": "directory", "want": ["place:Pharmacy"], "kind": "place by purpose"}
+{"said": "I'm booked for an MRI", "screen": "imaging", "want": ["place:MRI"], "kind": "place by purpose"}
+{"said": "I'm here for my pregnancy scan", "screen": "imaging", "want": ["place:Ultrasound"], "kind": "place by purpose"}
+{"said": "they need a chest x-ray", "screen": "imaging", "want": ["place:X-Ray"], "kind": "place by purpose"}
+{"said": "a CT of my head", "screen": "imaging", "want": ["place:CT Scan"], "kind": "place by purpose"}
+{"said": "I'm having a bone scan", "screen": "imaging", "want": ["place:Nuclear Medicine"], "kind": "place by purpose"}
+{"said": "where do I check in", "screen": "imaging", "want": ["place:Imaging Reception"], "kind": "place by purpose"}
+{"said": "my dad is in room 2", "screen": "ward4a", "want": ["place:4A Room 2"], "kind": "place by purpose"}
+{"said": "I need to ask a nurse something", "screen": "ward4a", "want": ["place:Nurses' Station 4A"], "kind": "place by purpose"}
+{"said": "I need my dressing changed", "screen": "ward4a", "want": ["place:Treatment Room"], "kind": "place by purpose"}
+{"said": "visiting the patient in room six", "screen": "ward4a", "want": ["place:4A Room 6"], "kind": "place by purpose"}
+{"said": "the yellow ball", "screen": "driving", "want": ["marker:yellow sphere"], "kind": "marker"}
+{"said": "the red cone", "screen": "driving", "want": ["marker:red cone"], "kind": "marker"}
+{"said": "that blue box", "screen": "driving", "want": ["marker:blue cube"], "kind": "marker"}
+{"said": "the green tube", "screen": "driving", "want": ["marker:green cylinder"], "kind": "marker"}
+{"said": "the orange one", "screen": "driving", "want": ["marker:orange sphere"], "kind": "marker"}
+{"said": "the purple block", "screen": "driving", "want": ["marker:purple cube"], "kind": "marker"}
+{"said": "the yellow one", "screen": "driving", "want": ["marker:yellow sphere"], "kind": "marker"}
+{"said": "the red thing", "screen": "driving", "want": ["marker:red cone"], "kind": "marker"}
+{"said": "head for the traffic cone", "screen": "driving", "want": ["marker:red cone"], "kind": "marker"}
+{"said": "the cylinder", "screen": "driving", "want": ["marker:green cylinder"], "kind": "marker"}
+{"said": "go to the green one", "screen": "driving", "want": ["marker:green cylinder"], "kind": "marker"}
+{"said": "the round orange marker", "screen": "driving", "want": ["marker:orange sphere"], "kind": "marker"}
+{"said": "the blue cube", "screen": "ordinary", "want": ["marker:blue cube"], "kind": "marker"}
+{"said": "that yellow ball over there", "screen": "ordinary", "want": ["marker:yellow sphere"], "kind": "marker"}
+{"said": "the purple box", "screen": "ordinary", "want": ["marker:purple cube"], "kind": "marker"}
+{"said": "the sphere", "screen": "driving", "want": ["none"], "kind": "marker unclear or not up"}
+{"said": "the cube", "screen": "driving", "want": ["none"], "kind": "marker unclear or not up"}
+{"said": "the pink ball", "screen": "driving", "want": ["none"], "kind": "marker unclear or not up"}
+{"said": "the white marker", "screen": "driving", "want": ["none"], "kind": "marker unclear or not up"}
+{"said": "number three", "screen": "directory", "want": ["place:Cafe"], "kind": "number"}
+{"said": "the first one", "screen": "directory", "want": ["place:Emergency"], "kind": "number"}
+{"said": "option nine", "screen": "directory", "want": ["place:Pharmacy"], "kind": "number"}
+{"said": "the fifth one", "screen": "directory", "want": ["place:Main Reception"], "kind": "number"}
+{"said": "number two please", "screen": "directory", "want": ["place:Allied Health"], "kind": "number"}
+{"said": "marker two", "screen": "driving", "want": ["marker:red cone"], "kind": "number"}
+{"said": "number four", "screen": "driving", "want": ["marker:green cylinder"], "kind": "number"}
+{"said": "the second one", "screen": "imaging", "want": ["place:X-Ray"], "kind": "number"}
+{"said": "number one", "screen": "imaging", "want": ["place:Imaging Reception"], "kind": "number"}
+{"said": "number twelve", "screen": "directory", "want": ["none"], "kind": "number"}
+{"said": "next page", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "show me more", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "what else is there", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "more options", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "scroll down", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "other places", "screen": "directory", "want": ["page"], "kind": "page"}
+{"said": "take me to the chapel", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "the gift shop", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "maternity please", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "the car park", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "the dental clinic", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "the library", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "intensive care", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "the kids ward", "screen": "directory", "want": ["none"], "kind": "not read"}
+{"said": "go to the pharmacy", "screen": "start", "want": ["none", "go"], "kind": "not read"}
+{"said": "take me to emergency", "screen": "start", "want": ["none", "go"], "kind": "not read"}
+{"said": "the cafe please", "screen": "start", "want": ["none", "go"], "kind": "not read"}
+{"said": "room nine", "screen": "ward4a", "want": ["none"], "kind": "not read"}
+{"said": "the ward", "screen": "directory", "want": ["none"], "kind": "unclear"}
+{"said": "take me to the ward please", "screen": "directory", "want": ["none"], "kind": "unclear"}
+{"said": "I'm visiting someone", "screen": "directory", "want": ["none"], "kind": "unclear"}
+{"said": "the scan room", "screen": "imaging", "want": ["none"], "kind": "unclear"}
+{"said": "the room", "screen": "ward4a", "want": ["none"], "kind": "unclear"}
+{"said": "I'm here for a scan", "screen": "imaging", "want": ["none"], "kind": "unclear"}
+{"said": "what time is it", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "how long will this take", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "thank you", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "you're doing great", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "hello", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "is it far", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "what's your name", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "I'm a bit nervous", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "nice weather today", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "who are you", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "can you hear me", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "my phone is ringing", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "sorry", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "oh look, there's my friend", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "this is taking forever", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "good morning", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "are we there yet", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "how are you", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "what floor is this", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "okay", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "hmm", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "I don't know", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "never mind", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "testing one two three", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "what's for lunch", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "tell me a joke", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "I love this chair", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "where am I", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "excuse me", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "I wonder where my sister is", "screen": "directory", "want": ["none", "stop"], "kind": "not a command"}
+{"said": "go to the farm see", "screen": "directory", "want": ["place:Pharmacy"], "kind": "speech slip"}
+{"said": "take me to the fame a see", "screen": "directory", "want": ["place:Pharmacy"], "kind": "speech slip"}
+{"said": "go to the cafe a", "screen": "directory", "want": ["place:Cafe"], "kind": "speech slip"}
+{"said": "go to ward for be", "screen": "directory", "want": ["place:Ward 4B"], "kind": "speech slip"}
+{"said": "go to ward for a", "screen": "directory", "want": ["place:Ward 4A"], "kind": "speech slip"}
+{"said": "go to path ology collection", "screen": "directory", "want": ["place:Pathology Collection"], "kind": "speech slip"}
+{"said": "go to all eyed health", "screen": "directory", "want": ["place:Allied Health"], "kind": "speech slip"}
+{"said": "go to the lips", "screen": "directory", "want": ["place:Lifts"], "kind": "speech slip"}
+{"said": "go to the toy lets", "screen": "directory", "want": ["place:Toilets"], "kind": "speech slip"}
+{"said": "go to main re section", "screen": "directory", "want": ["place:Main Reception"], "kind": "speech slip"}
+{"said": "go to medical imagine", "screen": "directory", "want": ["place:Medical Imaging"], "kind": "speech slip"}
+{"said": "go to outpatient clinic", "screen": "directory", "want": ["place:Outpatient Clinics"], "kind": "speech slip"}
+{"said": "go to emergence see", "screen": "directory", "want": ["place:Emergency"], "kind": "speech slip"}
+{"said": "go to see tea scan", "screen": "imaging", "want": ["place:CT Scan"], "kind": "speech slip"}
+{"said": "go to the m r i", "screen": "imaging", "want": ["place:MRI"], "kind": "speech slip"}
+{"said": "go to ultra sound", "screen": "imaging", "want": ["place:Ultrasound"], "kind": "speech slip"}
+{"said": "go to new clear medicine", "screen": "imaging", "want": ["place:Nuclear Medicine"], "kind": "speech slip"}
+{"said": "go to imagine reception", "screen": "imaging", "want": ["place:Imaging Reception"], "kind": "speech slip"}
+{"said": "go to the yellow sphere", "screen": "driving", "want": ["marker:yellow sphere"], "kind": "speech slip"}
+{"said": "go to the blue cue", "screen": "driving", "want": ["marker:blue cube"], "kind": "speech slip"}
+{"said": "go to the purple cub", "screen": "driving", "want": ["marker:purple cube"], "kind": "speech slip"}
+{"said": "go to the orange fear", "screen": "driving", "want": ["marker:orange sphere"], "kind": "speech slip"}

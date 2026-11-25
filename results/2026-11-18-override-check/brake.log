@@ -1,0 +1,14 @@
+seed 10000: smallest gap ahead 1.96 m, centre 1.25 m from a wall, no wall hit counted
+seed 10001: smallest gap ahead 0.06 m, centre 0.45 m from a wall, no wall hit counted
+seed 10002: smallest gap ahead 0.11 m, centre 0.50 m from a wall, no wall hit counted
+seed 10003: smallest gap ahead 0.10 m, centre 0.63 m from a wall, no wall hit counted
+seed 10004: smallest gap ahead 0.11 m, centre 0.55 m from a wall, no wall hit counted
+seed 10005: smallest gap ahead 0.06 m, centre 0.50 m from a wall, no wall hit counted
+seed 10006: smallest gap ahead 0.06 m, centre 0.50 m from a wall, no wall hit counted
+seed 10007: smallest gap ahead 0.06 m, centre 0.50 m from a wall, no wall hit counted
+seed 10008: smallest gap ahead 0.09 m, centre 0.50 m from a wall, no wall hit counted
+seed 10009: smallest gap ahead 0.45 m, centre 1.15 m from a wall, no wall hit counted
+
+10 trips in fp_hospital, wall brake on: 8 reached a wall (2 turned into open space)
+  touched it (centre at 0.40 m): 0 of 8, centre closest 0.45 m, smallest gap ahead 0.06 to 0.11 m (median 0.09 m)
+  counted as a wall hit by the trip's rule: 0

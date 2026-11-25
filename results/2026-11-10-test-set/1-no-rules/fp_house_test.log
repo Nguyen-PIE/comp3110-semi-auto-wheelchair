@@ -1,0 +1,101 @@
+Testing auto on 1 worlds, 20 trips each with spread and busy and events crowds
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Cannot connect to Webots instance, retrying for another 50 seconds...
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+  fp_house_test spread seed 10000: success     8.3 s
+  fp_house_test spread seed 10001: success    14.9 s
+  fp_house_test spread seed 10002: success     6.5 s
+  fp_house_test spread seed 10003: success    12.9 s
+  fp_house_test spread seed 10004: success     7.9 s
+  fp_house_test spread seed 10005: success    13.3 s
+  fp_house_test spread seed 10006: success    25.9 s
+  fp_house_test spread seed 10007: success     5.4 s
+  fp_house_test spread seed 10008: success     9.4 s
+  fp_house_test spread seed 10009: success     5.1 s
+  fp_house_test spread seed 10010: success     7.8 s
+  fp_house_test spread seed 10011: success    20.1 s
+  fp_house_test spread seed 10012: success     9.9 s
+  fp_house_test spread seed 10013: success    11.8 s
+  fp_house_test spread seed 10014: success    10.8 s
+  fp_house_test spread seed 10015: success     8.9 s
+  fp_house_test spread seed 10016: success     4.7 s
+  fp_house_test spread seed 10017: success    10.3 s
+  fp_house_test spread seed 10018: success    43.5 s
+  fp_house_test spread seed 10019: success     5.1 s
+  fp_house_test busy seed 10000: success     7.0 s
+  fp_house_test busy seed 10001: success    14.9 s
+  fp_house_test busy seed 10002: success     9.0 s
+  fp_house_test busy seed 10003: success    20.0 s
+  fp_house_test busy seed 10004: success     8.0 s
+  fp_house_test busy seed 10005: success     9.4 s
+  fp_house_test busy seed 10006: success    27.9 s
+  fp_house_test busy seed 10007: success     6.1 s
+  fp_house_test busy seed 10008: success     9.4 s
+  fp_house_test busy seed 10009: success     5.3 s
+  fp_house_test busy seed 10010: success     8.0 s
+  fp_house_test busy seed 10011: success    10.0 s
+  fp_house_test busy seed 10012: success    45.0 s
+  fp_house_test busy seed 10013: success     9.9 s
+  fp_house_test busy seed 10014: success    10.8 s
+  fp_house_test busy seed 10015: success     8.9 s
+  fp_house_test busy seed 10016: success     4.7 s
+  fp_house_test busy seed 10017: success     6.7 s
+  fp_house_test busy seed 10018: success    42.6 s
+  fp_house_test busy seed 10019: success     5.0 s
+  fp_house_test events seed 10000: success    11.3 s
+  fp_house_test events seed 10001: success    17.4 s
+  fp_house_test events seed 10002: success    13.3 s
+  fp_house_test events seed 10003: success    14.2 s
+  fp_house_test events seed 10004: success     7.9 s
+  fp_house_test events seed 10005: success    12.0 s
+  fp_house_test events seed 10006: success    24.4 s
+  fp_house_test events seed 10007: success     5.4 s
+  fp_house_test events seed 10008: success    14.5 s
+  fp_house_test events seed 10009: success     6.9 s
+  fp_house_test events seed 10010: success    12.7 s
+  fp_house_test events seed 10011: success    12.4 s
+  fp_house_test events seed 10012: success     5.9 s
+  fp_house_test events seed 10013: success    14.7 s
+  fp_house_test events seed 10014: success    45.5 s
+  fp_house_test events seed 10015: success    11.9 s
+  fp_house_test events seed 10016: success     6.6 s
+  fp_house_test events seed 10017: success     5.5 s
+  fp_house_test events seed 10018: success    11.5 s
+  fp_house_test events seed 10019: success     6.4 s
+
+SPREAD-OUT CROWDS (main score)
+                  episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_house_test           20           1.0                 0.0           0            0                0.0         0                12.13                 0.6        0.0       6.98             0.0
+ALL new building        20           1.0                 0.0           0            0                0.0         0                12.13                 0.6        0.0       6.98             0.0
+
+COMFORT, spread crowds (per trip, averaged)
+                  stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                             
+fp_house_test              3.66           1.2            0.5            0.05       1.47            0.44        2.77         5.45             0.3           1.3         1.84         0.29         1.24
+ALL new building           3.66           1.2            0.5            0.05       1.47            0.44        2.77         5.45             0.3           1.3         1.84         0.29         1.24
+
+BUSY CROWDS (stress test)
+                  episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_house_test           20           1.0                 0.0           0            0                0.0         0                13.43                 0.6       0.03       6.98             0.0
+ALL new building        20           1.0                 0.0           0            0                0.0         0                13.43                 0.6       0.03       6.98             0.0
+
+COMFORT, busy crowds (per trip, averaged)
+                  stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                             
+fp_house_test              3.17           1.2            0.5            0.25       1.89            0.43        2.79          4.8             0.0           0.9         2.13         0.35         1.16
+ALL new building           3.17           1.2            0.5            0.25       1.89            0.43        2.79          4.8             0.0           0.9         2.13         0.35         1.16
+
+EVENTS (spread-out crowds plus older people, people stepping out of rooms, ...)
+                  episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_house_test           20           1.0                 0.0           0            0                0.0         0                13.02                1.55       0.02       8.65             0.0
+ALL new building        20           1.0                 0.0           0            0                0.0         0                13.02                1.55       0.02       8.65             0.0
+
+COMFORT, events crowds (per trip, averaged)
+                  stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                             
+fp_house_test              7.73          2.05           1.25            0.05       1.66            0.15        3.81         7.55            0.12          2.15         1.93         0.28         1.42
+ALL new building           7.73          2.05           1.25            0.05       1.66            0.15        3.81         7.55            0.12          2.15         1.93         0.28         1.42
+
+Saved 60 trips to data/episodes/20261110-033819-webots-auto.parquet in 121 s

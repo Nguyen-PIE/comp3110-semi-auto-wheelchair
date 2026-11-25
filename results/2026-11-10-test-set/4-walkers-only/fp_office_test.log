@@ -1,0 +1,103 @@
+Testing auto on 1 worlds, 20 trips each with spread and busy and events crowds
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+The specified robot (at /tmp/webots/default/1451/ipc/wheelchair/extern) is not in the list of robots with <extern> controllers, retrying for another 50 seconds...
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+  fp_office_test spread seed 10000: success    14.1 s
+  fp_office_test spread seed 10001: success    17.5 s
+  fp_office_test spread seed 10002: success    18.4 s
+  fp_office_test spread seed 10003: success    17.4 s
+  fp_office_test spread seed 10004: success    24.5 s
+  fp_office_test spread seed 10005: success    17.9 s
+  fp_office_test spread seed 10006: success    18.4 s
+  fp_office_test spread seed 10007: success    20.4 s
+  fp_office_test spread seed 10008: success    13.1 s
+  fp_office_test spread seed 10009: success    22.7 s
+  fp_office_test spread seed 10010: success    20.5 s
+  fp_office_test spread seed 10011: success    15.5 s
+  fp_office_test spread seed 10012: success    13.1 s
+  fp_office_test spread seed 10013: success    17.4 s
+  fp_office_test spread seed 10014: success    18.4 s
+  fp_office_test spread seed 10015: success    11.8 s
+  fp_office_test spread seed 10016: success    15.0 s
+  fp_office_test spread seed 10017: success    37.7 s
+  fp_office_test spread seed 10018: success    11.8 s
+  fp_office_test spread seed 10019: success    19.7 s
+  fp_office_test busy seed 10000: success    26.3 s
+  fp_office_test busy seed 10001: success    27.9 s
+  fp_office_test busy seed 10002: success    50.0 s
+  fp_office_test busy seed 10003: success    28.5 s
+  fp_office_test busy seed 10004: success    22.5 s
+  fp_office_test busy seed 10005: success    46.7 s
+  fp_office_test busy seed 10006: success    24.3 s
+  fp_office_test busy seed 10007: success    41.7 s
+  fp_office_test busy seed 10008: success    16.2 s
+  fp_office_test busy seed 10009: success    39.9 s
+  fp_office_test busy seed 10010: success    41.1 s
+  fp_office_test busy seed 10011: success    19.3 s
+  fp_office_test busy seed 10012: success    47.7 s
+  fp_office_test busy seed 10013: success    20.1 s
+  fp_office_test busy seed 10014: success    23.9 s
+  fp_office_test busy seed 10015: success    21.2 s
+  fp_office_test busy seed 10016: success    30.5 s
+  fp_office_test busy seed 10017: success    43.4 s
+  fp_office_test busy seed 10018: success    14.8 s
+  fp_office_test busy seed 10019: success    66.7 s
+  fp_office_test events seed 10000: success    14.1 s
+  fp_office_test events seed 10001: success    18.5 s
+  fp_office_test events seed 10002: success    18.5 s
+  fp_office_test events seed 10003: success    19.9 s
+  fp_office_test events seed 10004: success    35.9 s
+  fp_office_test events seed 10005: success    19.9 s
+  fp_office_test events seed 10006: success    20.8 s
+  fp_office_test events seed 10007: success    28.0 s
+  fp_office_test events seed 10008: success    22.2 s
+  fp_office_test events seed 10009: success    23.5 s
+  fp_office_test events seed 10010: success    34.0 s
+  fp_office_test events seed 10011: success    31.6 s
+  fp_office_test events seed 10012: success    19.7 s
+  fp_office_test events seed 10013: success    19.8 s
+  fp_office_test events seed 10014: success    21.6 s
+  fp_office_test events seed 10015: success    15.4 s
+  fp_office_test events seed 10016: success    14.4 s
+  fp_office_test events seed 10017: success    36.4 s
+  fp_office_test events seed 10018: success    14.4 s
+  fp_office_test events seed 10019: success    32.4 s
+
+SPREAD-OUT CROWDS (main score)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_office_test           20           1.0                 0.0           0            0                0.0         0                18.27                 0.2       0.11       3.85             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                18.27                 0.2       0.11       3.85             0.0
+
+COMFORT, spread crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_office_test              0.49          0.25            0.1             0.0       0.36            0.57        2.55          3.0             0.0           0.3         1.16         0.41         0.81
+ALL new furniture           0.49          0.25            0.1             0.0       0.36            0.57        2.55          3.0             0.0           0.3         1.16         0.41         0.81
+
+BUSY CROWDS (stress test)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_office_test           20           1.0                 0.0           0            0                0.0         0                32.64                 3.1       0.01       8.59             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                32.64                 3.1       0.01       8.59             0.0
+
+COMFORT, busy crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_office_test              6.59          4.05            1.7            0.05       6.34            0.04        4.84        17.45            0.16           4.4         2.09         0.18          1.0
+ALL new furniture           6.59          4.05            1.7            0.05       6.34            0.04        4.84        17.45            0.16           4.4         2.09         0.18          1.0
+
+EVENTS (spread-out crowds plus older people, people stepping out of rooms, ...)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_office_test           20           1.0                 0.0           0            0                0.0         0                23.05                 1.6       0.02       6.89             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                23.05                 1.6       0.02       6.89             0.0
+
+COMFORT, events crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_office_test              4.21           1.9           0.95            0.05       2.26            0.14        4.18         9.25             0.0          2.55         1.48         0.32         0.95
+ALL new furniture           4.21           1.9           0.95            0.05       2.26            0.14        4.18         9.25             0.0          2.55         1.48         0.32         0.95
+
+Saved 60 trips to data/episodes/20261110-174248-webots-auto.parquet in 639 s

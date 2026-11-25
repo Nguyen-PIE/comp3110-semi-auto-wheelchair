@@ -1,0 +1,105 @@
+Testing auto on 1 worlds, 20 trips each with spread and busy and events crowds
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Cannot connect to Webots instance, retrying for another 50 seconds...
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+The specified robot (at /tmp/webots/default/1381/ipc/wheelchair/extern) is not in the list of robots with <extern> controllers, retrying for another 45 seconds...
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+  corridor_test spread seed 10000: success    19.8 s
+  corridor_test spread seed 10001: success    26.6 s
+  corridor_test spread seed 10002: success    20.9 s
+  corridor_test spread seed 10003: success    17.9 s
+  corridor_test spread seed 10004: success    16.4 s
+  corridor_test spread seed 10005: success    51.0 s
+  corridor_test spread seed 10006: success    18.6 s
+  corridor_test spread seed 10007: success    22.3 s
+  corridor_test spread seed 10008: success    31.6 s
+  corridor_test spread seed 10009: success    17.8 s
+  corridor_test spread seed 10010: success    38.1 s
+  corridor_test spread seed 10011: success    21.7 s
+  corridor_test spread seed 10012: success    22.5 s
+  corridor_test spread seed 10013: success    13.2 s
+  corridor_test spread seed 10014: success    17.6 s
+  corridor_test spread seed 10015: success    25.2 s
+  corridor_test spread seed 10016: success    14.9 s
+  corridor_test spread seed 10017: success    26.0 s
+  corridor_test spread seed 10018: success    26.3 s
+  corridor_test spread seed 10019: success    32.8 s
+  corridor_test busy seed 10000: success    19.8 s
+  corridor_test busy seed 10001: success    24.2 s
+  corridor_test busy seed 10002: success    20.9 s
+  corridor_test busy seed 10003: success    17.9 s
+  corridor_test busy seed 10004: success    16.4 s
+  corridor_test busy seed 10005: success    47.2 s
+  corridor_test busy seed 10006: success    18.4 s
+  corridor_test busy seed 10007: success    22.4 s
+  corridor_test busy seed 10008: success    45.4 s
+  corridor_test busy seed 10009: success    17.8 s
+  corridor_test busy seed 10010: success    39.3 s
+  corridor_test busy seed 10011: success    21.7 s
+  corridor_test busy seed 10012: success    23.1 s
+  corridor_test busy seed 10013: success    13.2 s
+  corridor_test busy seed 10014: success    17.6 s
+  corridor_test busy seed 10015: success    25.1 s
+  corridor_test busy seed 10016: success    14.9 s
+  corridor_test busy seed 10017: success    26.0 s
+  corridor_test busy seed 10018: success    26.3 s
+  corridor_test busy seed 10019: success    32.8 s
+  corridor_test events seed 10000: success    28.8 s
+  corridor_test events seed 10001: success    35.7 s
+  corridor_test events seed 10002: success    30.7 s
+  corridor_test events seed 10003: success    27.6 s
+  corridor_test events seed 10004: success    25.8 s
+  corridor_test events seed 10005: success    22.9 s
+  corridor_test events seed 10006: success    31.4 s
+  corridor_test events seed 10007: success    27.3 s
+  corridor_test events seed 10008: success    27.5 s
+  corridor_test events seed 10009: success    33.7 s
+  corridor_test events seed 10010: success    51.3 s
+  corridor_test events seed 10011: success    18.7 s
+  corridor_test events seed 10012: success    53.0 s
+  corridor_test events seed 10013: success    17.8 s
+  corridor_test events seed 10014: success    16.5 s
+  corridor_test events seed 10015: success    37.0 s
+  corridor_test events seed 10016: success    20.9 s
+  corridor_test events seed 10017: timeout    60.0 s
+  corridor_test events seed 10018: success    38.6 s
+  corridor_test events seed 10019: success    38.1 s
+
+SPREAD-OUT CROWDS (main score)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+corridor_test            20           1.0                 0.0           0            0                0.0         0                24.06                2.15        0.0       8.85             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                24.06                2.15        0.0       8.85             0.0
+
+COMFORT, spread crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+corridor_test               5.81           2.7            1.1             0.0       4.25            0.04        4.63         12.5            0.06          3.15         1.79         0.19         0.95
+ALL new furniture           5.81           2.7            1.1             0.0       4.25            0.04        4.63         12.5            0.06          3.15         1.79         0.19         0.95
+
+BUSY CROWDS (stress test)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+corridor_test            20           1.0                 0.0           0            0                0.0         0                24.52                2.15        0.0       8.83             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                24.52                2.15        0.0       8.83             0.0
+
+COMFORT, busy crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+corridor_test               5.74           2.7            1.1            0.05       4.26            0.04        4.52         12.6             0.0           3.3         1.82          0.2         0.96
+ALL new furniture           5.74           2.7            1.1            0.05       4.26            0.04        4.52         12.6             0.0           3.3         1.82          0.2         0.96
+
+EVENTS (spread-out crowds plus older people, people stepping out of rooms, ...)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+corridor_test            20          0.95                 0.0           0            0                0.0         1                 30.7                 3.9       0.01      10.05             0.0
+ALL new furniture        20          0.95                 0.0           0            0                0.0         1                 30.7                 3.9       0.01      10.05             0.0
+
+COMFORT, events crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+corridor_test               9.35          5.55           2.45             0.1       7.11       -2.55e-03        5.05         20.7            0.12           5.9         2.28          0.2          0.9
+ALL new furniture           9.35          5.55           2.45             0.1       7.11       -2.55e-03        5.05         20.7            0.12           5.9         2.28          0.2          0.9
+
+Saved 60 trips to data/episodes/20261110-033138-webots-auto.parquet in 281 s

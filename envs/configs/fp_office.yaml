@@ -1,0 +1,4 @@
+# Office floor plan from wheelchair-navi (31 x 95 m): open-plan desks, meeting rooms and corridors.
+# It is the same building as Isaac Sim's office scene. Downloaded by scripts/get_maps.sh.
+project:
+  floorplan: third_party/floorplans/wheelchair-navi/carter_office_navigation.yaml

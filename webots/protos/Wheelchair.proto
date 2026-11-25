@@ -1,0 +1,253 @@
+#VRML_SIM R2025a utf8
+# A mid-wheel-drive powered wheelchair for the G19 simulator.
+#
+# Same size and limits as the chair in the 2D simulator: it fits inside a 0.4 m radius
+# circle and turns on the spot about its centre, because the two driven wheels are in
+# the middle (like many real powered chairs). Two small casters, front and back, slide
+# freely so they do not fight the turn.
+#
+# Devices (names used by webots/bridge.py):
+#   "left wheel motor", "right wheel motor"      drive wheels (radius 0.15 m, 0.5 m apart)
+#   "left wheel sensor", "right wheel sensor"    wheel encoders (for odometry later)
+#   "lidar"                                      360 degree laser scanner, 0.33 m above the floor
+#   "camera"                                     forward camera at eye height, 960 x 540 (off unless enabled)
+#   "walker eye 1" to "walker eye 4"             what a person walked from a phone sees, 1056 x 480 (webots/phones.py
+#                                                moves each to its walker's eyes; parked under the floor, off)
+#
+# Axes: x forward, y left, z up (Webots' default).
+
+PROTO Wheelchair [
+  field SFVec3f    translation     0 0 0
+  field SFRotation rotation        0 0 1 0
+  field SFString   name            "wheelchair"
+  field SFString   controller      "<extern>"
+  field MFString   controllerArgs  []
+  field SFBool     supervisor      TRUE
+  field SFInt32    lidarRays       360     # rays per turn; the assistant uses 16 of them
+  field SFFloat    lidarRange      4.0     # metres, like the 2D wall sensor
+  field SFColor    frameColor      0.15 0.15 0.18
+  field SFColor    seatColor       0.10 0.30 0.60
+  field SFVec3f    walkerEye1Translation 0 0 -5      # set every step by webots/phones.py
+  field SFRotation walkerEye1Rotation    0 0 1 0
+  field SFVec3f    walkerEye2Translation 0 0 -5
+  field SFRotation walkerEye2Rotation    0 0 1 0
+  field SFVec3f    walkerEye3Translation 0 0 -5
+  field SFRotation walkerEye3Rotation    0 0 1 0
+  field SFVec3f    walkerEye4Translation 0 0 -5
+  field SFRotation walkerEye4Rotation    0 0 1 0
+]
+{
+  Robot {
+    translation IS translation
+    rotation IS rotation
+    name IS name
+    controller IS controller
+    controllerArgs IS controllerArgs
+    supervisor IS supervisor
+    children [
+      # ---------- looks only (no collisions) ----------
+      DEF BASE Pose {
+        translation 0 0 0.18
+        children [
+          Shape {
+            appearance PBRAppearance { baseColor IS frameColor roughness 0.6 metalness 0.3 }
+            geometry Box { size 0.60 0.40 0.20 }
+          }
+        ]
+      }
+      Pose {   # seat
+        translation -0.02 0 0.47
+        children [
+          Shape {
+            appearance DEF SEAT PBRAppearance { baseColor IS seatColor roughness 0.9 metalness 0 }
+            geometry Box { size 0.46 0.46 0.08 }
+          }
+        ]
+      }
+      Pose {   # seat post (thin, so the lidar sees past it)
+        translation 0 0 0.37
+        children [
+          Shape {
+            appearance PBRAppearance { baseColor IS frameColor roughness 0.6 metalness 0.3 }
+            geometry Cylinder { height 0.12 radius 0.02 }
+          }
+        ]
+      }
+      Pose {   # backrest
+        translation -0.24 0 0.78
+        children [
+          Shape { appearance USE SEAT geometry Box { size 0.06 0.46 0.55 } }
+        ]
+      }
+      Pose {   # left armrest
+        translation -0.02 0.25 0.66
+        children [
+          DEF ARMREST Shape {
+            appearance PBRAppearance { baseColor IS frameColor roughness 0.6 metalness 0.3 }
+            geometry Box { size 0.40 0.05 0.04 }
+          }
+        ]
+      }
+      Pose {   # right armrest
+        translation -0.02 -0.25 0.66
+        children [ USE ARMREST ]
+      }
+      Pose {   # joystick on the right armrest
+        translation 0.14 -0.25 0.72
+        children [
+          Shape {
+            appearance PBRAppearance { baseColor 0.05 0.05 0.05 roughness 0.5 metalness 0 }
+            geometry Cylinder { height 0.08 radius 0.012 }
+          }
+        ]
+      }
+      Pose {   # footrest
+        translation 0.33 0 0.08
+        children [
+          Shape {
+            appearance PBRAppearance { baseColor IS frameColor roughness 0.6 metalness 0.3 }
+            geometry Box { size 0.10 0.36 0.02 }
+          }
+        ]
+      }
+
+      # ---------- drive wheels ----------
+      HingeJoint {
+        jointParameters HingeJointParameters { axis 0 1 0 anchor 0 0.25 0.15 }
+        device [
+          RotationalMotor { name "left wheel motor" maxVelocity 10 maxTorque 60 }
+          PositionSensor { name "left wheel sensor" }
+        ]
+        endPoint Solid {
+          translation 0 0.25 0.15
+          rotation 1 0 0 1.5708
+          children [ DEF WHEEL Shape {
+            appearance PBRAppearance { baseColor 0.05 0.05 0.05 roughness 0.9 metalness 0 }
+            geometry Cylinder { height 0.06 radius 0.15 }
+          } ]
+          name "left wheel"
+          boundingObject Cylinder { height 0.06 radius 0.15 }
+          physics Physics { density -1 mass 3 }
+        }
+      }
+      HingeJoint {
+        jointParameters HingeJointParameters { axis 0 1 0 anchor 0 -0.25 0.15 }
+        device [
+          RotationalMotor { name "right wheel motor" maxVelocity 10 maxTorque 60 }
+          PositionSensor { name "right wheel sensor" }
+        ]
+        endPoint Solid {
+          translation 0 -0.25 0.15
+          rotation 1 0 0 1.5708
+          children [ USE WHEEL ]
+          name "right wheel"
+          boundingObject Cylinder { height 0.06 radius 0.15 }
+          physics Physics { density -1 mass 3 }
+        }
+      }
+
+      # ---------- casters: balls that slide freely (looks; their collision shapes are below) ----------
+      Pose {
+        translation 0.25 0 0.05
+        children [ DEF CASTER Shape {
+          appearance PBRAppearance { baseColor 0.3 0.3 0.3 roughness 0.5 metalness 0 }
+          geometry Sphere { radius 0.05 subdivision 2 }
+        } ]
+      }
+      Pose {
+        translation -0.25 0 0.05
+        children [ USE CASTER ]
+      }
+
+      # ---------- sensors ----------
+      Lidar {
+        translation 0 0 0.33
+        name "lidar"
+        horizontalResolution IS lidarRays
+        fieldOfView 6.2832
+        numberOfLayers 1
+        verticalFieldOfView 0.05
+        near 0.05
+        minRange 0.1
+        maxRange IS lidarRange
+        noise 0.005
+        defaultFrequency 10
+        children [
+          Shape {
+            appearance PBRAppearance { baseColor 0.8 0.1 0.1 roughness 0.5 metalness 0 }
+            geometry Cylinder { height 0.03 radius 0.04 }
+          }
+        ]
+      }
+      Camera {                     # big enough to read signs a few metres away (webots/vision.py),
+        translation 0.1 0 1.15       # tilted up 0.15 rad (8.6 degrees) to see signs hung high up close by
+        rotation 0 1 0 -0.15
+        name "camera"
+        fieldOfView 1.2
+        width 960
+        height 540
+        near 0.05
+      }
+      # What a person walked from a phone sees (webots/phones.py), wide like a phone held sideways,
+      # sharp enough to fill a phone's screen (528 x 240 was blurry stretched that far).
+      # Each is moved, in the chair's own frame, to its walker's eyes every step; they are switched
+      # on only while a phone uses them.
+      Camera {
+        translation IS walkerEye1Translation
+        rotation IS walkerEye1Rotation
+        name "walker eye 1"
+        fieldOfView 1.5
+        width 1056
+        height 480
+        near 0.05
+        antiAliasing TRUE
+      }
+      Camera {
+        translation IS walkerEye2Translation
+        rotation IS walkerEye2Rotation
+        name "walker eye 2"
+        fieldOfView 1.5
+        width 1056
+        height 480
+        near 0.05
+        antiAliasing TRUE
+      }
+      Camera {
+        translation IS walkerEye3Translation
+        rotation IS walkerEye3Rotation
+        name "walker eye 3"
+        fieldOfView 1.5
+        width 1056
+        height 480
+        near 0.05
+        antiAliasing TRUE
+      }
+      Camera {
+        translation IS walkerEye4Translation
+        rotation IS walkerEye4Rotation
+        name "walker eye 4"
+        fieldOfView 1.5
+        width 1056
+        height 480
+        near 0.05
+        antiAliasing TRUE
+      }
+    ]
+    # Collisions: the base and the two casters (the wheels have their own). The whole body uses
+    # the "caster" material, which the world makes frictionless, so the casters slide; only the
+    # drive wheels grip the floor.
+    contactMaterial "caster"
+    boundingObject Group {
+      children [
+        Pose { translation 0 0 0.18 children [ Box { size 0.60 0.40 0.20 } ] }
+        Pose { translation 0.25 0 0.05 children [ Sphere { radius 0.05 } ] }
+        Pose { translation -0.25 0 0.05 children [ Sphere { radius 0.05 } ] }
+      ]
+    }
+    physics Physics {
+      density -1
+      mass 110                    # chair and user
+      centerOfMass [ 0 0 0.30 ]
+    }
+  }
+}

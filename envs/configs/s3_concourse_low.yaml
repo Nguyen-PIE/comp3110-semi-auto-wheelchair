@@ -1,0 +1,11 @@
+# S3 Concourse, low density: an open room with 5 people walking.
+env:
+  set_shape: "square"
+  min_map_x: 18
+  max_map_x: 20
+  min_map_y: 18
+  max_map_y: 20
+  min_dynamic_humans: 5
+  max_dynamic_humans: 5
+project:
+  min_goal_distance: 8   # metres between the chair's start and its goal

@@ -1,0 +1,50 @@
+# Libraries downloaded and built by setup.sh, and its log
+third_party/
+setup.log
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Results and trained models stay out of Git (too big, and remade by the scripts that wrote them).
+# Only the policies and walk model the code loads by default, and the models of the 20 November
+# retraining, are kept in Git,
+# listed below, and the
+# results the docs quote, in results/ (not ignored).
+data/episodes/*
+!data/episodes/.gitkeep
+data/steps/*
+!data/steps/.gitkeep
+models/*
+!models/.gitkeep
+!models/assist_ppo.zip
+!models/assist_ppo_webots.zip
+!models/sit_prox.zip
+!models/sit_old.zip
+!models/r_old_2d.zip
+!models/r_prox_2d.zip
+!models/walk_trajectron/
+
+# macOS
+.DS_Store
+
+# Per-step speed traces from --save-traces (large; keep them with the results, not in Git)
+data/traces/*
+!data/traces/.gitkeep
+
+# What webots/spin_check.py saves about each spell of turning on the spot
+webots/logs/
+
+# Sign pictures drawn by webots/signs.py, sign results, and the sign detector's pictures and training runs
+webots/worlds/signs/
+data/signs/
+
+# The SiT pedestrian dataset and the tracks made from it (downloaded by form, licensed: do not republish)
+data/sit/
+
+# Voice recordings for webots/voice_eval.py (people's own voices: keep them out of Git) and its results
+data/voice/
+
+# API keys for the course model gateway (COMP3110_API_KEY and friends): never in Git
+.env

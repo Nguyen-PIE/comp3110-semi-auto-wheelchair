@@ -1,0 +1,4 @@
+# Warehouse floor plan from wheelchair-navi (21 x 31 m): a large open floor with shelving.
+# It is the same building as Isaac Sim's warehouse scene. Downloaded by scripts/get_maps.sh.
+project:
+  floorplan: third_party/floorplans/wheelchair-navi/carter_warehouse_navigation.yaml

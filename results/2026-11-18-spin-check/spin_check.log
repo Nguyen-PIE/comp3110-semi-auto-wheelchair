@@ -1,0 +1,28 @@
+fp_house_test, model assist_ppo_webots.zip, walkers learned
+  spread seed 10000: success  10.7 s, on the spot  0.7 s (  7%), side flips   2; safety stop 0.6s, policy stop 0.1s
+  spread seed 10001: success  24.5 s, on the spot  3.0 s ( 12%), side flips   5; safety stop 2.8s, other 0.2s
+  spread seed 10002: success  10.8 s, on the spot  0.3 s (  3%), side flips   2; safety stop 0.3s
+  spread seed 10003: success  13.5 s, on the spot  0.0 s (  0%), side flips   0; -
+  spread seed 10004: success   7.9 s, on the spot  0.0 s (  0%), side flips   0; -
+  spread seed 10005: success   8.7 s, on the spot  0.0 s (  0%), side flips   0; -
+  spread seed 10006: success  15.6 s, on the spot  0.0 s (  0%), side flips   2; -
+  spread seed 10007: success   5.4 s, on the spot  0.0 s (  0%), side flips   0; -
+  spread seed 10008: success   9.8 s, on the spot  0.0 s (  0%), side flips   0; -
+  spread seed 10009: success   5.2 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10000: success   7.3 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10001: success  24.5 s, on the spot  3.0 s ( 12%), side flips   5; safety stop 2.8s, other 0.2s
+  busy   seed 10002: success   8.8 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10003: success  12.0 s, on the spot  0.2 s (  2%), side flips   0; safety stop 0.2s
+  busy   seed 10004: success   8.3 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10005: success   8.3 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10006: success  13.3 s, on the spot  0.1 s (  1%), side flips   0; policy stop 0.1s
+  busy   seed 10007: success   6.8 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10008: success   9.8 s, on the spot  0.0 s (  0%), side flips   0; -
+  busy   seed 10009: success   5.2 s, on the spot  0.0 s (  0%), side flips   0; -
+
+20 trips: turning on the spot 7 s of 216 s (3%), steering side flips while stopped: 16
+  outcomes: {'success': 20}, mean trip 10.8 s
+  safety stop      6.7 s  ( 92%)
+  policy stop      0.2 s  (  3%)
+  other            0.4 s  (  5%)
+Every spell, longest first: spells.csv

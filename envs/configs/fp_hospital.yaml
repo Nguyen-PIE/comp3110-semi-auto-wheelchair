@@ -1,0 +1,4 @@
+# Hospital floor plan from wheelchair-navi (76 x 42 m): wards, corridors and a lobby.
+# It is the same building as Isaac Sim's hospital scene. Downloaded by scripts/get_maps.sh.
+project:
+  floorplan: third_party/floorplans/wheelchair-navi/carter_hospital_navigation.yaml

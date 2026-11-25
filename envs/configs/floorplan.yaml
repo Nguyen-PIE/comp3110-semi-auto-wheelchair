@@ -1,0 +1,22 @@
+# Shared settings for floor-plan scenarios: the fp_*.yaml files and your own maps.
+# Applied on top of base.yaml, then each fp_*.yaml names its map.
+
+project:
+  min_goal_distance: 10    # metres along the route from the chair's start to its goal
+  max_goal_distance: 25
+  people_within: 6         # people start and walk within this many metres of the chair's route
+  pixels_per_metre: 30     # drawing scale; the demo shows a window that follows the chair
+
+episode:
+  episode_length: 900      # 90 s: routes are up to 25 m
+
+env:
+  set_shape: "rectangle"   # ignored: the map size comes from the floor plan
+  min_dynamic_humans: 8
+  max_dynamic_humans: 12
+  min_static_humans: 0
+  max_static_humans: 2
+  min_h_h_static_interactions_non_dispersing: 0   # groups standing and talking
+  max_h_h_static_interactions_non_dispersing: 2
+  min_human_in_h_h_interactions: 2
+  max_human_in_h_h_interactions: 3

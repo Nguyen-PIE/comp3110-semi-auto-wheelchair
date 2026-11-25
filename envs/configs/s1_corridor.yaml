@@ -1,0 +1,13 @@
+# S1 Corridor: a long, narrow room with people walking both ways.
+env:
+  set_shape: "rectangle"
+  min_map_x: 20
+  max_map_x: 24
+  min_map_y: 4
+  max_map_y: 5
+  min_dynamic_humans: 5
+  max_dynamic_humans: 10
+  min_plants: 0
+  max_plants: 2
+project:
+  min_goal_distance: 12   # metres between the chair's start and its goal

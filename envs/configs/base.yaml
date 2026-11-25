@@ -1,0 +1,128 @@
+# Base settings shared by every scenario (SocNavGym v0.2 config format).
+# Scenario files in this folder only list the values they change.
+# Units: metres, seconds, radians.
+
+project:                    # our own settings; removed before the config reaches SocNavGym
+  min_goal_distance: 6     # re-draw the scene until the goal is at least this far away
+  behaviour:               # what the walking people are like (envs/behaviours.py)
+    speed_mean: 1.15       # m/s; indoor adults walk about 1.1 to 1.4 m/s
+    speed_sd: 0.2
+    speed_min: 0.6
+    speed_max: 1.6
+    phone_share: 0.2       # share of walkers on the phone: slow, not watching, drifting sideways
+    phone_speed: [0.5, 0.85]
+    phone_sway: [0.3, 0.6]       # side to side drift, as a share of walking speed
+    phone_pause_rate: [0.04, 0.08]   # chance per second of stopping to read
+    group_share: 0.3       # share of walkers who walk with others (pairs and threes)
+    group_of_three_share: 0.3
+    pause_share: 0.3       # share of the other walkers who stop now and then ...
+    pause_rate: [0.02, 0.06]     # ... chance per second (about every 15 to 50 s) ...
+    pause_seconds: [2.0, 8.0]    # ... for this long
+    dwell_chance: 0.4      # chance of waiting a while on arriving, before choosing the next destination
+    dwell_seconds: [2.0, 10.0]
+
+rendering:
+  resolution_x: 900        # window width in pixels
+  resolution_y: 900        # window height in pixels
+  milliseconds: 30         # display delay per frame
+
+episode:
+  episode_length: 600      # max steps per episode (600 x 0.1 s = 60 s)
+  time_step: 0.1           # seconds per step, so the policy acts 10 times a second
+  end_with_collision: true
+
+robot:                      # the wheelchair
+  robot_radius: 0.4        # a powered chair is about 0.65 m wide and 1.1 m long
+  goal_radius: 0.5         # counts as "arrived" within 0.5 m of the goal
+  robot_type: "diff-drive" # drives and turns like a real wheelchair
+  min_advance_robot: 0.0   # no reversing
+  max_advance_robot: 1.2   # m/s, from wheelchair-navi's planner settings
+  max_rotation: 0.8        # rad/s, from wheelchair-navi's planner settings
+  # The chair's final heading should not matter. SocNavGym compares headings
+  # without wrapping them, so its default threshold (pi) rejects about half of
+  # all arrivals; 7 rad is more than a full turn, so arriving is enough.
+  min_goal_orientation_threshold: 7.0
+  max_goal_orientation_threshold: 7.0
+
+human:
+  human_diameter: 0.72
+  human_goal_radius: 0.25
+  human_policy: "sfm"      # social force model; "orca" or "random" also work
+  gaze_angle: 3.14159
+  fov_angle: 6.2831853
+  prob_to_avoid_robot: 0.7 # chance a person steers around the chair
+  max_advance_human: 1.6   # m/s, the fastest anyone walks (people's own speeds are in project.behaviour)
+  max_rotation_human: 1.57
+  speed_threshold: 0.05
+
+laptop:
+  laptop_width: 0.4
+  laptop_length: 0.6
+
+plant:
+  plant_radius: 0.4
+
+table:
+  table_width: 1.0
+  table_length: 2.0
+
+chair:
+  chair_width: 0.4
+  chair_length: 0.35
+
+wall:
+  wall_thickness: 0.2
+  wall_segment_size: 1.0
+
+human-human-interaction:
+  interaction_radius: 0.72
+  interaction_goal_radius: 1.44
+  noise_variance: 0.005
+
+human-laptop-interaction:
+  human_laptop_distance: 0.3
+
+env:
+  margin: 0.5
+  crowd_dispersal_probability: 0.0
+  human_laptop_dispersal_probability: 0.0
+  crowd_formation_probability: 0.0
+  human_laptop_formation_probability: 0.0
+  reward_file: "dsrnn"     # built-in reward for now; ours will be added as a wrapper
+  cuda_device: 0
+
+  min_static_humans: 0
+  max_static_humans: 0
+  min_dynamic_humans: 5
+  max_dynamic_humans: 5
+  min_tables: 0
+  max_tables: 0
+  min_chairs: 0
+  max_chairs: 0
+  min_plants: 0
+  max_plants: 0
+  min_laptops: 0
+  max_laptops: 0
+
+  min_h_h_dynamic_interactions: 0
+  max_h_h_dynamic_interactions: 0
+  min_h_h_dynamic_interactions_non_dispersing: 0
+  max_h_h_dynamic_interactions_non_dispersing: 0
+  min_h_h_static_interactions: 0
+  max_h_h_static_interactions: 0
+  min_h_h_static_interactions_non_dispersing: 0
+  max_h_h_static_interactions_non_dispersing: 0
+  min_human_in_h_h_interactions: 2
+  max_human_in_h_h_interactions: 3
+  min_h_l_interactions: 0
+  max_h_l_interactions: 0
+  min_h_l_interactions_non_dispersing: 0
+  max_h_l_interactions_non_dispersing: 0
+
+  get_padded_observations: false
+  set_shape: "square"
+  add_corridors: false     # not implemented in SocNavGym v0.2; S1 uses a long, narrow room instead
+  min_map_x: 12
+  max_map_x: 12
+  min_map_y: 12
+  max_map_y: 12

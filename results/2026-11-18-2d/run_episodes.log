@@ -1,0 +1,193 @@
+Running 20 episodes of S1 Corridor with assist...
+  s1_corridor seed 10000: success    16.6 s
+  s1_corridor seed 10001: success    31.5 s
+  s1_corridor seed 10002: success    22.6 s
+  s1_corridor seed 10003: success    19.7 s
+  s1_corridor seed 10004: success    18.3 s
+  s1_corridor seed 10005: success    14.7 s
+  s1_corridor seed 10006: success    19.8 s
+  s1_corridor seed 10007: success    25.3 s
+  s1_corridor seed 10008: success    30.3 s
+  s1_corridor seed 10009: success    21.5 s
+  s1_corridor seed 10010: success    13.6 s
+  s1_corridor seed 10011: success    17.1 s
+  s1_corridor seed 10012: success    19.7 s
+  s1_corridor seed 10013: success    23.7 s
+  s1_corridor seed 10014: collision   8.2 s
+  s1_corridor seed 10015: success    29.8 s
+  s1_corridor seed 10016: success    38.5 s
+  s1_corridor seed 10017: success    16.6 s
+  s1_corridor seed 10018: success    35.4 s
+  s1_corridor seed 10019: success    13.4 s
+Running 20 episodes of S2 Ward with assist...
+  s2_ward seed 10000: success    11.1 s
+  s2_ward seed 10001: success    16.0 s
+  s2_ward seed 10002: success    23.4 s
+  s2_ward seed 10003: success    27.4 s
+  s2_ward seed 10004: success    14.1 s
+  s2_ward seed 10005: success     6.3 s
+  s2_ward seed 10006: success    16.4 s
+  s2_ward seed 10007: success    14.1 s
+  s2_ward seed 10008: success    15.4 s
+  s2_ward seed 10009: success    20.4 s
+  s2_ward seed 10010: success    29.2 s
+  s2_ward seed 10011: success    21.2 s
+  s2_ward seed 10012: success     8.0 s
+  s2_ward seed 10013: success    25.5 s
+  s2_ward seed 10014: success    13.6 s
+  s2_ward seed 10015: success    12.0 s
+  s2_ward seed 10016: success    11.3 s
+  s2_ward seed 10017: success    17.5 s
+  s2_ward seed 10018: success    23.4 s
+  s2_ward seed 10019: success     9.9 s
+Running 20 episodes of S3 Concourse (5 people) with assist...
+  s3_concourse_low seed 10000: success    10.8 s
+  s3_concourse_low seed 10001: success    17.6 s
+  s3_concourse_low seed 10002: success    17.9 s
+  s3_concourse_low seed 10003: success     8.2 s
+  s3_concourse_low seed 10004: success    11.4 s
+  s3_concourse_low seed 10005: success    13.7 s
+  s3_concourse_low seed 10006: success     9.4 s
+  s3_concourse_low seed 10007: success    12.4 s
+  s3_concourse_low seed 10008: success    18.6 s
+  s3_concourse_low seed 10009: success     8.6 s
+  s3_concourse_low seed 10010: success    11.6 s
+  s3_concourse_low seed 10011: success    10.2 s
+  s3_concourse_low seed 10012: success    13.2 s
+  s3_concourse_low seed 10013: success    11.5 s
+  s3_concourse_low seed 10014: success    11.4 s
+  s3_concourse_low seed 10015: success     9.9 s
+  s3_concourse_low seed 10016: success    12.0 s
+  s3_concourse_low seed 10017: success    11.9 s
+  s3_concourse_low seed 10018: success    14.9 s
+  s3_concourse_low seed 10019: success    13.5 s
+Running 20 episodes of S3 Concourse (10 people) with assist...
+  s3_concourse_mid seed 10000: success    11.6 s
+  s3_concourse_mid seed 10001: success    14.0 s
+  s3_concourse_mid seed 10002: success    12.4 s
+  s3_concourse_mid seed 10003: success    16.1 s
+  s3_concourse_mid seed 10004: success    10.8 s
+  s3_concourse_mid seed 10005: success    11.5 s
+  s3_concourse_mid seed 10006: success    17.7 s
+  s3_concourse_mid seed 10007: success    11.4 s
+  s3_concourse_mid seed 10008: success    11.6 s
+  s3_concourse_mid seed 10009: success    12.3 s
+  s3_concourse_mid seed 10010: success    13.1 s
+  s3_concourse_mid seed 10011: success    11.1 s
+  s3_concourse_mid seed 10012: success    10.2 s
+  s3_concourse_mid seed 10013: success    18.5 s
+  s3_concourse_mid seed 10014: success    15.9 s
+  s3_concourse_mid seed 10015: success    12.4 s
+  s3_concourse_mid seed 10016: success    18.6 s
+  s3_concourse_mid seed 10017: success    11.1 s
+  s3_concourse_mid seed 10018: success    12.5 s
+  s3_concourse_mid seed 10019: success    16.8 s
+Running 20 episodes of S3 Concourse (20 people) with assist...
+  s3_concourse_high seed 10000: success    17.7 s
+  s3_concourse_high seed 10001: success    14.9 s
+  s3_concourse_high seed 10002: success    17.9 s
+  s3_concourse_high seed 10003: success    12.7 s
+  s3_concourse_high seed 10004: success    16.5 s
+  s3_concourse_high seed 10005: success     9.9 s
+  s3_concourse_high seed 10006: success    16.4 s
+  s3_concourse_high seed 10007: success    11.0 s
+  s3_concourse_high seed 10008: success    12.2 s
+  s3_concourse_high seed 10009: success    14.1 s
+  s3_concourse_high seed 10010: success    12.9 s
+  s3_concourse_high seed 10011: success    20.2 s
+  s3_concourse_high seed 10012: success    12.7 s
+  s3_concourse_high seed 10013: success    12.1 s
+  s3_concourse_high seed 10014: success    14.1 s
+  s3_concourse_high seed 10015: success    15.8 s
+  s3_concourse_high seed 10016: success    17.8 s
+  s3_concourse_high seed 10017: success    40.5 s
+  s3_concourse_high seed 10018: success    18.6 s
+  s3_concourse_high seed 10019: success    14.3 s
+Running 20 episodes of Hospital floor plan with assist...
+  fp_hospital seed 10000: success    25.6 s
+  fp_hospital seed 10001: success    41.1 s
+  fp_hospital seed 10002: success    18.2 s
+  fp_hospital seed 10003: success    24.0 s
+  fp_hospital seed 10004: success    30.7 s
+  fp_hospital seed 10005: success    20.3 s
+  fp_hospital seed 10006: success    23.6 s
+  fp_hospital seed 10007: success    21.5 s
+  fp_hospital seed 10008: success    29.3 s
+  fp_hospital seed 10009: success    32.4 s
+  fp_hospital seed 10010: success    24.5 s
+  fp_hospital seed 10011: success    33.4 s
+  fp_hospital seed 10012: collision  29.7 s
+  fp_hospital seed 10013: success    18.4 s
+  fp_hospital seed 10014: success    32.6 s
+  fp_hospital seed 10015: collision  10.6 s
+  fp_hospital seed 10016: success    27.8 s
+  fp_hospital seed 10017: success    58.6 s
+  fp_hospital seed 10018: success    19.6 s
+  fp_hospital seed 10019: success    37.4 s
+Running 20 episodes of Office floor plan with assist...
+  fp_office seed 10000: success    24.6 s
+  fp_office seed 10001: success    39.7 s
+  fp_office seed 10002: success    27.0 s
+  fp_office seed 10003: success    23.8 s
+  fp_office seed 10004: success    24.2 s
+  fp_office seed 10005: success    20.5 s
+  fp_office seed 10006: success    18.5 s
+  fp_office seed 10007: success    24.1 s
+  fp_office seed 10008: success    68.9 s
+  fp_office seed 10009: success    23.3 s
+  fp_office seed 10010: success    19.1 s
+  fp_office seed 10011: success    24.0 s
+  fp_office seed 10012: success    16.4 s
+  fp_office seed 10013: success    71.3 s
+  fp_office seed 10014: success    15.5 s
+  fp_office seed 10015: success    32.4 s
+  fp_office seed 10016: success    25.8 s
+  fp_office seed 10017: success    17.8 s
+  fp_office seed 10018: success    29.0 s
+  fp_office seed 10019: success    21.6 s
+Running 20 episodes of Warehouse floor plan with assist...
+  fp_warehouse seed 10000: success    23.5 s
+  fp_warehouse seed 10001: success    12.1 s
+  fp_warehouse seed 10002: success    17.6 s
+  fp_warehouse seed 10003: success    15.3 s
+  fp_warehouse seed 10004: success    29.9 s
+  fp_warehouse seed 10005: success    14.4 s
+  fp_warehouse seed 10006: success    25.0 s
+  fp_warehouse seed 10007: success    14.5 s
+  fp_warehouse seed 10008: success    20.4 s
+  fp_warehouse seed 10009: success    13.1 s
+  fp_warehouse seed 10010: success    15.4 s
+  fp_warehouse seed 10011: success    28.3 s
+  fp_warehouse seed 10012: success    14.7 s
+  fp_warehouse seed 10013: success    29.7 s
+  fp_warehouse seed 10014: success    19.1 s
+  fp_warehouse seed 10015: success    19.6 s
+  fp_warehouse seed 10016: success    23.5 s
+  fp_warehouse seed 10017: success    26.8 s
+  fp_warehouse seed 10018: success    16.0 s
+  fp_warehouse seed 10019: success    21.4 s
+
+                   episodes  success_rate  collisions_per_100  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+scenario                                                                                                                                                                 
+s1_corridor              20          0.95                 5.0                0.0         0                22.53                2.00      -0.01       4.63             0.0
+s2_ward                  20          1.00                 0.0                0.0         0                16.81                1.35       0.00       4.68             0.0
+s3_concourse_low         20          1.00                 0.0                0.0         0                12.44                0.20       0.12       1.40             0.0
+s3_concourse_mid         20          1.00                 0.0                0.0         0                13.48                0.55       0.15       2.61             0.0
+s3_concourse_high        20          1.00                 0.0                0.0         0                16.12                1.35       0.12       4.46             0.0
+fp_hospital              20          0.90                10.0                0.0         0                28.83                3.25      -0.11       5.39             0.0
+fp_office                20          1.00                 0.0                0.0         0                28.38                2.75      -0.22       4.71             0.0
+fp_warehouse             20          1.00                 0.0                0.0         0                20.02                1.60      -0.04       4.09             0.0
+
+COMFORT (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+s1_corridor                 5.20          2.25           0.90            0.00       2.63            0.09        5.55        11.30            0.58          3.10         1.76         0.23         0.88
+s2_ward                     5.77          2.05           0.95            0.05       2.58            0.16        5.04         8.75            0.00          2.55         2.31         0.18         1.00
+s3_concourse_low            0.40          0.10           0.05            0.00       0.04            0.59        2.25         1.30            0.00          0.10         1.27         0.33         0.71
+s3_concourse_mid            2.22          0.55           0.40            0.00       0.26            0.33        3.58         2.85            0.00          0.55         1.33         0.29         0.69
+s3_concourse_high           4.87          1.60           1.10            0.10       1.06            0.17        5.02         7.70            0.00          1.85         1.66         0.29         0.71
+fp_hospital                 7.30          3.75           1.75            0.05       4.42            0.04        5.94        16.75            0.40          5.90         1.88         0.16         0.86
+fp_office                   6.03          3.50           1.25            0.05       4.63            0.02        6.53        14.95            0.17          4.80         1.94         0.18         0.86
+fp_warehouse                4.49          1.75           0.70            0.00       1.80            0.11        5.56         9.40            0.00          2.50         1.59         0.16         0.85
+
+Saved 160 episodes to data/episodes/20261118-041507-assist.parquet in 772 s

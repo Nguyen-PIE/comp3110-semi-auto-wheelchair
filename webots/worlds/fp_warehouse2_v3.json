@@ -1,0 +1,22 @@
+{
+  "walking": [
+    5,
+    8
+  ],
+  "standing": [
+    0,
+    2
+  ],
+  "groups": [
+    0,
+    2
+  ],
+  "goal_distance": [
+    6,
+    18
+  ],
+  "time_limit_s": 90,
+  "people_within": 6.0,
+  "map": "webots/worlds/fp_warehouse2_v3_map.yaml",
+  "people_slots": 30
+}

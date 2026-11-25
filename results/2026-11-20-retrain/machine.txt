@@ -1,0 +1,7 @@
+webots-3D
+e31f46c docs: proxemics design and how to run it
+Linux cs3110-accelerator-g19 7.0.0-1014-aws #14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+16
+               total        used        free      shared  buff/cache   available
+Mem:            30Gi       1.2Gi        11Gi       3.2Mi        18Gi        29Gi
+Swap:             0B          0B          0B

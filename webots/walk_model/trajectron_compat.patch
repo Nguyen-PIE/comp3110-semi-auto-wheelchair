@@ -1,0 +1,95 @@
+diff --git a/experiments/pedestrians/process_data.py b/experiments/pedestrians/process_data.py
+index 369fcd0..19580e1 100644
+--- a/experiments/pedestrians/process_data.py
++++ b/experiments/pedestrians/process_data.py
+@@ -82,7 +82,7 @@ nl = 0
+ l = 0
+ maybe_makedirs('../processed')
+ data_columns = pd.MultiIndex.from_product([['position', 'velocity', 'acceleration'], ['x', 'y']])
+-for desired_source in ['eth', 'hotel', 'univ', 'zara1', 'zara2']:
++for desired_source in sys.argv[1:]:
+     for data_class in ['train', 'val', 'test']:
+         env = Environment(node_type_list=['PEDESTRIAN'], standardization=standardization)
+         attention_radius = dict()
+diff --git a/trajectron/environment/data_structures.py b/trajectron/environment/data_structures.py
+index 5ffdc6f..fc7477e 100644
+--- a/trajectron/environment/data_structures.py
++++ b/trajectron/environment/data_structures.py
+@@ -1,6 +1,7 @@
+ import numpy as np
+ import pandas as pd
+-from collections import Sequence, OrderedDict
++from collections import OrderedDict
++from collections.abc import Sequence
+ 
+ 
+ class RingBuffer(Sequence):
+diff --git a/trajectron/environment/node.py b/trajectron/environment/node.py
+index 2db820e..ac4a877 100644
+--- a/trajectron/environment/node.py
++++ b/trajectron/environment/node.py
+@@ -2,7 +2,6 @@ import random
+ import numpy as np
+ import pandas as pd
+ from environment import DoubleHeaderNumpyArray
+-from ncls import NCLS
+ 
+ 
+ class Node(object):
+@@ -140,6 +139,7 @@ class MultiNode(Node):
+         starts = np.array([node.first_timestep for node in self.nodes_list], dtype=np.int64)
+         ends = np.array([node.last_timestep for node in self.nodes_list], dtype=np.int64)
+         ids = np.arange(len(self.nodes_list), dtype=np.int64)
++        from ncls import NCLS   # only for MultiNode (nuScenes), so not needed for pedestrians
+         self.interval_tree = NCLS(starts, ends, ids)
+ 
+     @staticmethod
+diff --git a/trajectron/environment/scene_graph.py b/trajectron/environment/scene_graph.py
+index 1113bd4..4d969e9 100644
+--- a/trajectron/environment/scene_graph.py
++++ b/trajectron/environment/scene_graph.py
+@@ -135,10 +135,10 @@ class TemporalSceneGraph(object):
+         position_cube = np.full((total_timesteps, N, 2), np.nan)
+ 
+         adj_cube = np.zeros((total_timesteps, N, N), dtype=np.int8)
+-        dist_cube = np.zeros((total_timesteps, N, N), dtype=np.float)
++        dist_cube = np.zeros((total_timesteps, N, N), dtype=float)
+ 
+         node_type_mat = np.zeros((N, N), dtype=np.int8)
+-        node_attention_mat = np.zeros((N, N), dtype=np.float)
++        node_attention_mat = np.zeros((N, N), dtype=float)
+ 
+         for node_idx, node in enumerate(nodes):
+             if online:
+diff --git a/trajectron/train.py b/trajectron/train.py
+index 0e40b5b..f5033c2 100644
+--- a/trajectron/train.py
++++ b/trajectron/train.py
+@@ -35,7 +35,8 @@ if args.eval_device is None:
+     args.eval_device = torch.device('cpu')
+ 
+ # This is needed for memory pinning using a DataLoader (otherwise memory is pinned to cuda:0 by default)
+-torch.cuda.set_device(args.device)
++if torch.cuda.is_available():
++    torch.cuda.set_device(args.device)
+ 
+ if args.seed is not None:
+     random.seed(args.seed)
+@@ -137,7 +138,7 @@ def main():
+ 
+         node_type_dataloader = utils.data.DataLoader(node_type_data_set,
+                                                      collate_fn=collate,
+-                                                     pin_memory=False if args.device is 'cpu' else True,
++                                                     pin_memory=False if str(args.device) == 'cpu' else True,
+                                                      batch_size=args.batch_size,
+                                                      shuffle=True,
+                                                      num_workers=args.preprocess_workers)
+@@ -180,7 +181,7 @@ def main():
+ 
+             node_type_dataloader = utils.data.DataLoader(node_type_data_set,
+                                                          collate_fn=collate,
+-                                                         pin_memory=False if args.eval_device is 'cpu' else True,
++                                                         pin_memory=False if str(args.eval_device) == 'cpu' else True,
+                                                          batch_size=args.eval_batch_size,
+                                                          shuffle=True,
+                                                          num_workers=args.preprocess_workers)

@@ -1,0 +1,102 @@
+Testing auto on 1 worlds, 20 trips each with spread and busy and events crowds
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Cannot connect to Webots instance, retrying for another 50 seconds...
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+Error: USER or USERNAME environment variable not set, falling back to 'default' username.
+  fp_hospital_test spread seed 10000: success    28.3 s
+  fp_hospital_test spread seed 10001: success    16.8 s
+  fp_hospital_test spread seed 10002: success    19.0 s
+  fp_hospital_test spread seed 10003: success    16.1 s
+  fp_hospital_test spread seed 10004: success    23.7 s
+  fp_hospital_test spread seed 10005: success    19.2 s
+  fp_hospital_test spread seed 10006: success    11.3 s
+  fp_hospital_test spread seed 10007: success    12.9 s
+  fp_hospital_test spread seed 10008: success    29.4 s
+  fp_hospital_test spread seed 10009: success    15.1 s
+  fp_hospital_test spread seed 10010: success    16.1 s
+  fp_hospital_test spread seed 10011: success    18.2 s
+  fp_hospital_test spread seed 10012: success    11.7 s
+  fp_hospital_test spread seed 10013: success    10.6 s
+  fp_hospital_test spread seed 10014: success    16.0 s
+  fp_hospital_test spread seed 10015: success    13.1 s
+  fp_hospital_test spread seed 10016: success    20.4 s
+  fp_hospital_test spread seed 10017: success    21.6 s
+  fp_hospital_test spread seed 10018: success    18.0 s
+  fp_hospital_test spread seed 10019: success    12.4 s
+  fp_hospital_test busy seed 10000: success    27.7 s
+  fp_hospital_test busy seed 10001: success    40.1 s
+  fp_hospital_test busy seed 10002: success    42.3 s
+  fp_hospital_test busy seed 10003: collision  19.6 s
+  fp_hospital_test busy seed 10004: success    24.2 s
+  fp_hospital_test busy seed 10005: success    26.5 s
+  fp_hospital_test busy seed 10006: success    46.8 s
+  fp_hospital_test busy seed 10007: success    37.7 s
+  fp_hospital_test busy seed 10008: success    34.7 s
+  fp_hospital_test busy seed 10009: timeout    90.0 s
+  fp_hospital_test busy seed 10010: success    23.1 s
+  fp_hospital_test busy seed 10011: success    33.8 s
+  fp_hospital_test busy seed 10012: success    19.5 s
+  fp_hospital_test busy seed 10013: success    17.7 s
+  fp_hospital_test busy seed 10014: timeout    90.0 s
+  fp_hospital_test busy seed 10015: success    23.8 s
+  fp_hospital_test busy seed 10016: success    30.6 s
+  fp_hospital_test busy seed 10017: success    31.5 s
+  fp_hospital_test busy seed 10018: success    35.5 s
+  fp_hospital_test busy seed 10019: success    34.3 s
+  fp_hospital_test events seed 10000: success    18.1 s
+  fp_hospital_test events seed 10001: success    20.7 s
+  fp_hospital_test events seed 10002: success    22.6 s
+  fp_hospital_test events seed 10003: success    25.6 s
+  fp_hospital_test events seed 10004: success    22.9 s
+  fp_hospital_test events seed 10005: success    19.2 s
+  fp_hospital_test events seed 10006: success    31.7 s
+  fp_hospital_test events seed 10007: success    15.5 s
+  fp_hospital_test events seed 10008: success    30.0 s
+  fp_hospital_test events seed 10009: success    24.0 s
+  fp_hospital_test events seed 10010: success    20.3 s
+  fp_hospital_test events seed 10011: success    33.2 s
+  fp_hospital_test events seed 10012: success    14.2 s
+  fp_hospital_test events seed 10013: success    13.1 s
+  fp_hospital_test events seed 10014: success    66.7 s
+  fp_hospital_test events seed 10015: success    11.5 s
+  fp_hospital_test events seed 10016: success    28.7 s
+  fp_hospital_test events seed 10017: success    26.9 s
+  fp_hospital_test events seed 10018: success    19.2 s
+  fp_hospital_test events seed 10019: success    15.8 s
+
+SPREAD-OUT CROWDS (main score)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_hospital_test         20           1.0                 0.0           0            0                0.0         0                 17.5                 0.6       0.03       4.48             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                 17.5                 0.6       0.03       4.48             0.0
+
+COMFORT, spread crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_hospital_test            1.83          0.75            0.5             0.0       0.57            0.43         2.5          3.4            0.15           0.9         1.24         0.18         0.94
+ALL new furniture           1.83          0.75            0.5             0.0       0.57            0.43         2.5          3.4            0.15           0.9         1.24         0.18         0.94
+
+BUSY CROWDS (stress test)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_hospital_test         20          0.85                 5.0           1            0                0.0         2                31.16                 2.6       -0.0       8.76             0.0
+ALL new furniture        20          0.85                 5.0           1            0                0.0         2                31.16                 2.6       -0.0       8.76             0.0
+
+COMFORT, busy crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_hospital_test            8.97           4.9            1.9            0.15       6.27       -2.40e-03        4.46        17.35            0.33           4.3         2.32         0.17         0.98
+ALL new furniture           8.97           4.9            1.9            0.15       6.27       -2.40e-03        4.46        17.35            0.33           4.3         2.32         0.17         0.98
+
+EVENTS (spread-out crowds plus older people, people stepping out of rooms, ...)
+                   episodes  success_rate  collisions_per_100  hit_moving  hit_stopped  wall_hits_per_100  timeouts  mean_time_to_goal_s  near_misses_per_ep  min_gap_m  mean_jerk  freezes_per_ep
+fp_hospital_test         20           1.0                 0.0           0            0                0.0         0                23.99                 2.3        0.0       7.06             0.0
+ALL new furniture        20           1.0                 0.0           0            0                0.0         0                23.99                 2.3        0.0       7.06             0.0
+
+COMFORT, events crowds (per trip, averaged)
+                   stops_per_min  stop_go_near  flicker_stops  unneeded_stops  waiting_s  min_speed_near  peak_decel  hard_brakes  weaves_per_min  safety_stops  delay_ratio  alarm_false  pred_err_2s
+scenario                                                                                                                                                                                              
+fp_hospital_test            5.69          2.45           0.85            0.15       4.49             0.1         3.7          8.4            0.13          2.75         1.71         0.21         1.27
+ALL new furniture           5.69          2.45           0.85            0.15       4.49             0.1         3.7          8.4            0.13          2.75         1.71         0.21         1.27
+
+Saved 60 trips to data/episodes/20261110-030634-webots-auto.parquet in 613 s

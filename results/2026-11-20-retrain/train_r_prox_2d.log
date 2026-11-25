@@ -1,0 +1,17 @@
+Stage 1: copying the teacher rule (40,000 steps)...
+  Rule drove 246 trips: return  18.36  success  100%  hit person    0%  hit wall    0%
+  cloning epoch 10: action error 0.141, value error 9.98
+  cloning epoch 20: action error 0.126, value error 7.45
+  cloning epoch 30: action error 0.116, value error 5.21
+Stage 2: reinforcement learning (100,000 steps)...
+   10000 steps  return  17.93  success  100%  hit person    0%  hit wall    0%  (48 steps/s)
+   20000 steps  return  17.95  success  100%  hit person    0%  hit wall    0%  (46 steps/s)
+   30000 steps  return  18.14  success  100%  hit person    0%  hit wall    0%  (43 steps/s)
+   40000 steps  return  18.11  success  100%  hit person    0%  hit wall    0%  (43 steps/s)
+   50000 steps  return  18.60  success  100%  hit person    0%  hit wall    0%  (42 steps/s)
+   60000 steps  return  18.01  success  100%  hit person    0%  hit wall    0%  (41 steps/s)
+   70000 steps  return  18.67  success  100%  hit person    0%  hit wall    0%  (41 steps/s)
+   80000 steps  return  19.35  success  100%  hit person    0%  hit wall    0%  (40 steps/s)
+   90000 steps  return  18.87  success  100%  hit person    0%  hit wall    0%  (41 steps/s)
+  100000 steps  return  18.53  success  100%  hit person    0%  hit wall    0%  (41 steps/s)
+Saved models/r_prox_2d.zip

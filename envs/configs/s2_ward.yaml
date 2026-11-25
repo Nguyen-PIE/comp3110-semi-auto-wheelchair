@@ -1,0 +1,22 @@
+# S2 Ward: a room with tables and chairs, and some people standing in groups.
+# (SocNavGym v0.2's L-shaped rooms are broken, so this uses a rectangle.)
+env:
+  set_shape: "rectangle"
+  min_map_x: 12
+  max_map_x: 14
+  min_map_y: 8
+  max_map_y: 10
+  min_dynamic_humans: 3
+  max_dynamic_humans: 6
+  min_static_humans: 0
+  max_static_humans: 2
+  min_tables: 2
+  max_tables: 3
+  min_chairs: 0
+  max_chairs: 2
+  min_h_h_static_interactions_non_dispersing: 1
+  max_h_h_static_interactions_non_dispersing: 2
+  min_human_in_h_h_interactions: 2
+  max_human_in_h_h_interactions: 3
+project:
+  min_goal_distance: 6   # metres between the chair's start and its goal

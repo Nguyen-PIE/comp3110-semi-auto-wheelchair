@@ -1,0 +1,21 @@
+{
+  "map": "webots/worlds/corridor_v2_map.yaml",
+  "walking": [
+    5,
+    10
+  ],
+  "standing": [
+    0,
+    0
+  ],
+  "groups": [
+    0,
+    0
+  ],
+  "goal_distance": [
+    12,
+    22
+  ],
+  "time_limit_s": 60,
+  "people_slots": 25
+}
