@@ -1,5 +1,7 @@
 # G19: Shared-control wheelchair
 
+Written by Pierre Nguyen, (Jayden) Teng Jian Jeow and (Scott) Aung Khant Kyaw.
+
 A powered wheelchair that drives itself through a building it does not know, gives way to the people
 around it, and hands control back the moment its rider asks. The rider says where to go, by voice,
 by keys or by looking at a place, and can take over at any time. Everything runs in simulation, in
@@ -105,3 +107,8 @@ results/       the results quoted in the docs
 docs/          the guides above
 2d-simulator/  the 2D simulator's guides
 ```
+
+## Licence
+
+The code is under the [MIT licence](LICENSE). The datasets, floor plans and models trained on them
+keep their own licences, listed in [docs/data.md](docs/data.md#licences-and-privacy).
